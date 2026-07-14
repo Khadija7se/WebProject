@@ -74,7 +74,7 @@ The goal of this project was to create a premium digital experience for a restau
 
 ## 🌐 Live Demo
 
-()
+(https://bellapasta.vercel.app/)
 
 ---
 
