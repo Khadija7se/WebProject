@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gift Cards_BellaPasta</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav>
+    <img src="pics/logooooo.png" class="nav-logo" alt="" href="/">
+    <div class="nav-links">
+      <a class="aline" href="index.html#about">About Us</a>
+      <a class="aline" href="index.html#fullMenu">Menus</a>
+      <a class="aline" href="GiftCardPage.html">Gift Cards</a>
+      <a class="aline" href="work-with-us.html">Work with us</a>
+      <a class="aline" href="parties.html">Parties</a>
+      <a href="Reservation.html" id="reserv">Reservations</a>
+    </div>
+  </nav>
+  <div class="nav-spacer"></div>
+  <main>
+    <div class="giftcard_page">
+      <h2>Gift Cards</h2>
+      <p class="subtitle">Give the gift of an unforgettable Italian dining experience.</p>
+
+      <img src="pics/giftcard_2.png" id="GiftCardimg" alt="">
+      <label for="" id="lab">Choose the Amount of your Gift Card:</label>
+      <div class="gc-amounts">
+
+        <input type="button" value="$10" class="gc-amount-btn"></button>
+        <input type="button" value="$20" class="gc-amount-btn"></button>
+        <input type="button" value="$50" class="gc-amount-btn"></button>
+        <input type="button" value="$100" class="gc-amount-btn"></button>
+        <input type="button" value="$150" class="gc-amount-btn"></button>
+        <input type="button" value="$200" class="gc-amount-btn"></button>
+        <input type="button" value="$500" class="gc-amount-btn"></button>
+      </div>
+      <input type="hidden" id="selectedAmount" value="">
+      <button class="btn-addcart" id="addToCart">Add to Cart</button>
+      <p class="gc-message" id="gcMessage"></p>
+
+    </div>
+  </main>
+
+  <footer>
+    <h4>Bella Pasta</h4>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h5>Visit Us</h5>
+        <p>42 Via Roma</p>
+        <p>Little Italy</p>
+        <a href="tel:5558421962">(555) 842-1962</a>
+      </div>
+      <div class="footer-col">
+        <h5>Hours</h5>
+        <p>Tuesday &ndash; Sunday</p>
+        <p>5:00 PM &ndash; 11:00 PM</p>
+        <p style="color:#666;font-style:italic;background:none;">Closed Mondays</p>
+      </div>
+      <div class="footer-col">
+        <h5>Navigate</h5>
+        <a href="/BellaP.html">Home</a>
+        <a href="/#fullMenu">Menus</a>
+        <a href="/reservation">Reservations</a>
+      </div>
+    </div>
+    <p class="copy">&copy;2026 BellaPasta &mdash; Est. 1962</p>
+  </footer>
+
+  <div id="toast"></div>
+  <script src="control.js"></script>
+</body>
+
+</html>

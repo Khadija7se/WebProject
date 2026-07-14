@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations_BellaPasta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <img src="pics/logooooo.png" class="nav-logo" alt="" href="/">
+        <div class="nav-links">
+            <a class="aline" href="index.html#about">About Us</a>
+            <a class="aline" href="index.html#fullMenu">Menus</a>
+            <a class="aline" href="GiftCardPage.html">Gift Cards</a>
+            <a class="aline" href="work-with-us.html">Work with us</a>
+            <a class="aline" href="parties.html">Parties</a>
+            <a href="Reservation.html" id="reserv">Reservations</a>
+        </div>
+    </nav>
+    <div class="nav-spacer"></div>
+    <main>
+        <div class="reservation-page">
+            <h2 id="reservtitle">Reservation</h2>
+            <div class="gallery">
+                <img src="pics/pexels-kadiravsarr-20169244.jpg">
+                <img src="pics/kisan.jpg">
+                <img src="pics/restouran.jpg">
+                <img src="pics/table2.jpg">
+            </div>
+            <div class="reserve-btn-wrap">
+                <button id="reserveBtn" onclick="formulshow()">Reserve a Table</button>
+            </div>
+            <!-- RESERVATION FORM OVERLAY -->
+            <div id="formreserv">
+                <div class="form-card">
+                    <button id="xclose" onclick="closeForm()" title="Close">&times;</button>
+                    <h2>Reserve a Table</h2>
+                    <span class="form-subtitle">We look forward to welcoming you.</span>
+
+                    <span class="spanno">— Required —</span>
+                    <input class="input" type="text" id="resName" placeholder="Your Name">
+
+                    <span class="spanno">— Required —</span>
+                    <select id="resLocation" class="form-select">
+                        <option value="">Location</option>
+                        <option value="Italy, Galaxy-17, BellaPasta">Italy, Galaxy-17, BellaPasta</option>
+                    </select>
+
+                    <span class="spanno">— Optional —</span>
+                    <select id="resGuests" class="form-select">
+                        <option value="1">1 Person</option>
+                        <option value="2">2 People</option>
+                        <option value="3">3 People</option>
+                        <option value="4">4 People</option>
+                        <option value="5">5 People</option>
+                        <option value="6">6 People</option>
+                        <option value="7">7+ People</option>
+                    </select>
+
+                    <span class="spanno">— Required —</span>
+                    <input class="input" type="date" id="resDate">
+
+                    <span class="spanno">— Required —</span>
+                    <select id="resTime" class="form-select">
+                        <option value="">Select a time</option>
+                        <option value="5:00 PM">5:00 PM</option>
+                        <option value="5:30 PM">5:30 PM</option>
+                        <option value="6:00 PM">6:00 PM</option>
+                        <option value="6:30 PM">6:30 PM</option>
+                        <option value="7:00 PM">7:00 PM</option>
+                        <option value="7:30 PM">7:30 PM</option>
+                        <option value="8:00 PM">8:00 PM</option>
+                        <option value="8:30 PM">8:30 PM</option>
+                        <option value="9:00 PM">9:00 PM</option>
+                        <option value="9:30 PM">9:30 PM</option>
+                        <option value="10:00 PM">10:00 PM</option>
+                    </select>
+
+                    <button id="btnbook" onclick="submitReservation()">Book My Table</button>
+                    <p class="res-message" id="resMessage"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h4>BellaPasta</h4>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h5>Visit Us</h5>
+                <p>42 Via Roma</p>
+                <p>Little Italy</p>
+                <a href="tel:5558421962">(555) 842-1962</a>
+            </div>
+            <div class="footer-col">
+                <h5>Hours</h5>
+                <p>Tuesday &ndash; Sunday</p>
+                <p>5:00 PM &ndash; 11:00 PM</p>
+                <p style="color:#666;font-style:italic;background:none;">Closed Mondays</p>
+            </div>
+            <div class="footer-col">
+                <h5>Navigate</h5>
+                <a href="/BellaP.html">Home</a>
+                <a href="/#fullMenu">Menus</a>
+                <a href="/reservation">Reservations</a>
+            </div>
+        </div>
+        <p class="copy">&copy;2026 BellaPasta &mdash; Est. 1962</p>
+    </footer>
+    <script src="control.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private Events & Parties_BellaPasta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <img src="pics/logooooo.png" class="nav-logo" alt="" href="/">
+        <div class="nav-links">
+            <a class="aline" href="index.html#about">About Us</a>
+            <a class="aline" href="index.html#fullMenu">Menus</a>
+            <a class="aline" href="GiftCardPage.html">Gift Cards</a>
+            <a class="aline" href="work-with-us.html">Work with us</a>
+            <a class="aline" href="parties.html">Parties</a>
+            <a href="Reservation.html" id="reserv">Reservations</a>
+        </div>
+    </nav>
+    <div class="nav-spacer"></div>
+    <main>
+        <!-- HERO BANNER -->
+        <div class="page-hero">
+            <img src="pics/Partiespic.png">
+            <div class="page-hero-text">
+            </div>
+        </div>
+        </div>
+        <div class="nav-spacer"></div>
+        <!-- INTRO -->
+        <section class="parties-intro">
+            <h2>Your Occasion, Our Stage</h2>
+            <p>
+                Whether it's an intimate birthday dinner, a milestone anniversary, a corporate gathering,
+                or a family celebration — Bella Pasta offers a warm, authentic setting that transforms any
+                event into a cherished memory. Our team handles every detail so you can simply enjoy the moment.
+            </p>
+        </section>
+
+        <!-- PACKAGES -->
+        <section class="packages-section">
+            <h2>Event Packages</h2>
+            <div class="packages-grid">
+
+                <div class="package-card">
+                    <div class="package-img-wrap">
+                        <img src="pics/Intimate.png" alt="Intimate Package">
+                    </div>
+                    <div class="package-body">
+                        <h3>Intimate</h3>
+                        <p class="package-guests">Up to 10 Guests</p>
+                        <ul>
+                            <li>Reserved private corner</li>
+                            <li>3-course set menu</li>
+                            <li>Welcome Prosecco</li>
+                            <li>Custom dessert plate</li>
+                        </ul>
+                        <p class="package-price">From $55 <span>/ per person</span></p>
+                    </div>
+                </div>
+
+                <div class="package-card featured-pkg">
+                    <div class="pkg-badge">Most Popular</div>
+                    <div class="package-img-wrap">
+                        <img src="pics/Classic.png" alt="Classic Package">
+                    </div>
+                    <div class="package-body">
+                        <h3>Classic</h3>
+                        <p class="package-guests">Up to 30 Guests</p>
+                        <ul>
+                            <li>Semi-private dining room</li>
+                            <li>4-course menu with choices</li>
+                            <li>Wine pairing included</li>
+                            <li>Live music option</li>
+                            <li>Custom centrepieces</li>
+                        </ul>
+                        <p class="package-price">From $80 <span>/ per person</span></p>
+                    </div>
+                </div>
+
+                <div class="package-card">
+                    <div class="package-img-wrap">
+                        <img src="pics/Grand.png" alt="Grand Package">
+                    </div>
+                    <div class="package-body">
+                        <h3>Grand</h3>
+                        <p class="package-guests">Up to 60 Guests</p>
+                        <ul>
+                            <li>Full restaurant buyout</li>
+                            <li>Bespoke multi-course menu</li>
+                            <li>Open bar selection</li>
+                            <li>Live musician</li>
+                            <li>Event coordinator included</li>
+                        </ul>
+                        <p class="package-price">From $120 <span>/ per person</span></p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- INQUIRY FORM -->
+        <section class="inquiry-section">
+            <h2>Plan Your Event</h2>
+            <p class="inquiry-sub">Fill out the form and our events team will reach out within 24 hours.</p>
+
+            <div class="inquiry-form-wrap">
+                <form id="partyForm" onsubmit="submitParty(event)">
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Your Name <span class="req">*</span></label>
+                            <input class="input" type="text" id="partyName" placeholder="Maria Rossi" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email <span class="req">*</span></label>
+                            <input class="input" type="email" id="partyEmail" placeholder="maria@example.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Type of Event <span class="req">*</span></label>
+                            <select id="partyType" class="form-select" required>
+                                <option value="">Select event type</option>
+                                <option value="Birthday">Birthday Party</option>
+                                <option value="Anniversary">Anniversary</option>
+                                <option value="Corporate">Corporate Dinner</option>
+                                <option value="Wedding">Wedding Reception</option>
+                                <option value="Graduation">Graduation</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Preferred Package</label>
+                            <select id="partyPackage" class="form-select">
+                                <option value="Intimate">Intimate (up to 10)</option>
+                                <option value="Classic" selected>Classic (up to 30)</option>
+                                <option value="Grand">Grand (up to 60)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Event Date <span class="req">*</span></label>
+                            <input class="input" type="date" id="partyDate" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Number of Guests <span class="req">*</span></label>
+                            <input class="input" type="number" id="partyGuests" placeholder="e.g. 20" min="2" max="60"
+                                required>
+                        </div>
+                    </div>
+
+                    <div class="form-group" style="background:none;">
+                        <label>Tell us about your event</label>
+                        <textarea class="input" id="partyMessage" rows="4"
+                            placeholder="Any special requests, dietary needs, decor preferences..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit" id="partySubmitBtn">Send Inquiry</button>
+                    <p class="form-msg" id="partyMsg"></p>
+
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <h4>BellaPasta</h4>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h5>Visit Us</h5>
+                <p>42 Via Roma</p>
+                <p>Little Italy</p>
+                <a href="tel:5558421962">(555) 842-1962</a>
+            </div>
+            <div class="footer-col">
+                <h5>Hours</h5>
+                <p>Tuesday &ndash; Sunday</p>
+                <p>5:00 PM &ndash; 11:00 PM</p>
+                <p style="color:#666;font-style:italic;background:none;">Closed Mondays</p>
+            </div>
+            <div class="footer-col">
+                <h5>Navigate</h5>
+                <a href="/BellaP.html">Home</a>
+                <a href="/#fullMenu">Menus</a>
+                <a href="/reservation">Reservations</a>
+            </div>
+        </div>
+        <p class="copy">&copy;2026 BellaPasta &mdash; Est. 1962</p>
+    </footer>
+    <script src="control.js"></script>
+</body>
+
+</html>
