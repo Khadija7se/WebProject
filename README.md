@@ -50,17 +50,17 @@ The goal of this project was to create a premium digital experience for a restau
 ![OurMenusSection](Screenshots/OurMenusSection.png)
 
 ### About Us Section
-![About_Us_Section](Screenshots/About_Us_Section.png)
+![AboutUsSection](Screenshots/AboutUsSection.png)
 
 ### Gift Cards Page
-![Gift_Cards_Page](Screenshots/Gift_Cards_Page.png)
+![Gift_Cards_Page](Screenshots/GiftCardsPage.png)
 
 ### Work With Us Page
-![Work_With_Us1](Screenshots/Work_With_Us1.png)
+![WorkWithUs1](Screenshots/WorkWithUs1.png)
 
-![Work_With_Us2](Screenshots/Work_With_Us2.png)
+![WorkWithUs2](Screenshots/WorkWithUs2.png)
 
-![WwUs_Applying3](Screenshots/WwUs_Applying3.png)
+![WwUsApplying3](Screenshots/WwUsApplying3.png)
 
 ### Parties & Events Page
 ![Parties 1](Screenshots/Parties1.png)
@@ -68,7 +68,7 @@ The goal of this project was to create a premium digital experience for a restau
 ![Parties 2](Screenshots/Parties2.png)
 
 ### Reservation Page
-![Reservation_Page](Screenshots/Reservation_Page.png)
+![ReservationPage](Screenshots/ReservationPage.png)
 
 ---
 
