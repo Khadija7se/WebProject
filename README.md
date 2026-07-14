@@ -47,7 +47,7 @@ The goal of this project was to create a premium digital experience for a restau
 ![HomePage](Screenshots/HomePage.png)
 
 ### Menu Section
-![Our_Menus_Section](Screenshots/Our_Menus_Section.png)
+![OurMenusSection](Screenshots/OurMenusSection.png)
 
 ### About Us Section
 ![About_Us_Section](Screenshots/About_Us_Section.png)
