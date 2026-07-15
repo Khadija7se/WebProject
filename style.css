@@ -1291,7 +1291,9 @@ select.form-select {
         font-size: 12px;
         padding: 8px 12px;
     }
-
+    #fullMenu h2{
+        color: black;
+    }
     /* MENU */
     .menu {
         padding: 100px 20px 60px;
